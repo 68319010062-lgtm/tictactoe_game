@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe 💜</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎮 Tic Tac Toe 💜</h1>
+
+  <div class="mode-select">
+    <label>โหมดการเล่น:</label>
+    <select id="mode">
+      <option value="player">ผู้เล่น 2 คน</option>
+      <option value="bot" selected>เล่นกับบอท</option>
+    </select>
+
+    <label>ระดับความยาก:</label>
+    <select id="difficulty">
+      <option value="easy">ง่าย</option>
+      <option value="medium" selected>ปานกลาง</option>
+      <option value="hard">ยาก</option>
+    </select>
+
+    <button id="startBtn">เริ่มเกม</button>
+  </div>
+
+  <div id="game" class="hidden">
+    <div id="board" class="board"></div>
+    <div id="status"></div>
+    <button id="restartBtn">เล่นอีกครั้ง</button>
+  </div>
+
+  <!-- เสียงภายนอก (ถ้าต้องการใช้ไฟล์ออนไลน์) -->
+  <audio id="clickSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_b8150a253d.mp3?filename=click-124467.mp3"></audio>
+  <audio id="winSound" src="https://cdn.pixabay.com/download/audio/2021/09/29/audio_14a1b7e08a.mp3?filename=success-1-6297.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
